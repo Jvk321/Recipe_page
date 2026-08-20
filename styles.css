@@ -223,3 +223,45 @@ hr {
     font-family: "Outfit";
     flex-shrink: 0;
 }
+
+.nutrition-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+#nutrition-heading {
+    color: #854632;
+}
+
+.nutrition-box caption {
+    text-align: left;
+    margin-bottom: 24px;
+    color: #5F564D;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th{
+    border-bottom: 1px solid #E3DDD7;
+    padding: 12px 32px;
+}
+
+th {
+    font-weight: 400;
+    color: #5F564D;
+    padding-left: 20px;
+}
+
+td {
+    font-weight: 700;
+    color: #854632;
+    padding-right: 56px;
+}
+
+tr:last-child th, tr:last-child td{
+    border-bottom: none;
+}
