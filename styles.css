@@ -84,3 +84,20 @@ img {
     height: auto;
     max-width: 375px;
 }
+
+.recipe-description-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 24px;
+}
+
+#recipe-title {
+    font-size: 36px;
+    color: #312E2C;
+}
+
+#recipe-description {
+    color: #5F564D;
+}
