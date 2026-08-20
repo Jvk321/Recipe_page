@@ -181,3 +181,45 @@ img {
     align-items: center;
     gap: 16px;
 }
+
+hr {
+    border: 0px;
+    border-top: 1px solid #E3DDD7;
+    width: 100%;
+}
+
+.instruction-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+#instructions-heading {
+    color: #854632;
+}
+
+.instruction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px;
+    padding-left: 8px;
+    list-style: none;
+    counter-reset: instruction;
+    color: #5F564D;
+}
+
+.instruction-list li {
+    display: flex;
+    gap: 16px;
+    counter-increment: instruction;
+}
+
+.instruction-list li::before {
+    content: counter(instruction) ".";
+    color: #854632;
+    font-weight: 700;
+    font-family: "Outfit";
+    flex-shrink: 0;
+}
